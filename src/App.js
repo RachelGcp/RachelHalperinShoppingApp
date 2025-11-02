@@ -10,6 +10,7 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
+        <div>badskjsaoi</div>
         <div className="app-container">
           <Header />
           <Routes>
