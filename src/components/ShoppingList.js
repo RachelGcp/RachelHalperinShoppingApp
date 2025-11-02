@@ -15,7 +15,7 @@ function ShoppingList() {
 
   const handleAddItem = () => {
     if (!selectedCategory || !productName || amount < 1) {
-      alert('Please fill all fields');
+      alert('Please fill all fields!!');
       return;
     }
     
@@ -37,7 +37,7 @@ function ShoppingList() {
 
   const handleProceedToOrder = () => {
     if (items.length === 0) {
-      alert('Your cart is empty');
+      alert('Your cart is empty :(');
       return;
     }
     navigate('/order');
@@ -92,7 +92,7 @@ function ShoppingList() {
               className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
               onClick={handleAddItem}
             >
-              Add to Cart
+              Add to Cart+
             </button>
           </div>
         </div>
@@ -114,7 +114,7 @@ function ShoppingList() {
                     className="text-red-500 hover:text-red-700"
                     onClick={() => handleRemoveItem(item.id)}
                   >
-                    Remove
+                    Remove -
                   </button>
                 </div>
               </li>
@@ -132,7 +132,7 @@ function ShoppingList() {
         </div>
       ) : (
         <div className="bg-white p-4 rounded shadow text-center">
-          <p className="text-gray-500">Your cart is empty</p>
+          <p className="text-gray-500">Your cart is empty:(</p>
         </div>
       )}
     </div>
