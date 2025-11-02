@@ -6,13 +6,13 @@ import { selectItems } from '../features/cart/cartSlice';
 function Header() {
   const items = useSelector(selectItems);
   const location = useLocation();
-
+  const shira="hello shira";
   return (
     <header className="py-4 bg-blue-600 text-white">
       <div className="container mx-auto flex justify-between items-center px-4">
         <h1 className="text-2xl font-bold">Shopping App</h1>
         <nav className="flex space-x-6">
-          <Link to="/" className={`nav-link ${location.pathname === '/' ? 'font-bold' : ''}`}>
+          <Link to="/" className={`nav-link ${location.pathname === '/' ? 'font-bold' : ''} ${shira}`}>
             Shopping List
           </Link>
           <Link to="/order" className={`nav-link ${location.pathname === '/order' ? 'font-bold' : ''}`}>
