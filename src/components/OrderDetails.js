@@ -112,7 +112,7 @@ function OrderDetails() {
             </label>
             <input
               type="email"
-              
+
               id="email"
               name="email"
               className="w-full p-2 border rounded"
@@ -139,7 +139,7 @@ function OrderDetails() {
             </div>
           ) : (
             <div className="text-center p-4 border rounded mb-4">
-              <p className="text-gray-500">Your cart is empty</p>
+              <p className="text-gray-500">Your cart is empty!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
             </div>
           )}
           
