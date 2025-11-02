@@ -12,6 +12,7 @@ const tamar2="good luck!!!!!"
 
   return (
     <header className="py-4 bg-blue-600 text-white">
+      <h1>hello!!!</h1>
       <div className="container mx-auto flex justify-between items-center px-4">
        
         <h1 className="text-2xl font-bold">Shopping App</h1>
