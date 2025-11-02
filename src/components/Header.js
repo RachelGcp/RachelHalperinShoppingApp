@@ -6,6 +6,7 @@ import { selectItems } from '../features/cart/cartSlice';
 function Header() {
   const items = useSelector(selectItems);
   const location = useLocation();
+  const tamarrotan= "hello tamar!"
 
   return (
     <header className="py-4 bg-blue-600 text-white">
@@ -13,6 +14,7 @@ function Header() {
        
         <h1 className="text-2xl font-bold">Shopping App</h1>
         <h2 className="text-2xl font-bold">Hello to our Shopping</h2>
+        <h1>{tamarrotan}</h1>
         <nav className="flex space-x-6">
           <Link to="/" className={`nav-link ${location.pathname === '/' ? 'font-bold' : ''}`}>
             Shopping List
