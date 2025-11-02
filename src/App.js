@@ -6,12 +6,13 @@ import ShoppingList from './components/ShoppingList';
 import OrderDetails from './components/OrderDetails';
 import Header from './components/Header';
 
+
 function App() {
   return (
     <Provider store={store}>
-      <Router>
+      <Router >
         <div className="app-container">
-          <Header />
+          <Header color="#3456"/>
           <Routes>
             <Route path="/" element={<ShoppingList />} />
             <Route path="/order" element={<OrderDetails />} />
