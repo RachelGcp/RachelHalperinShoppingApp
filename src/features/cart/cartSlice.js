@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  categories: ['Groceries', 'Dairy', 'Bakery', 'Meat', 'Produce', 'Household', 'Electronics'],
+  categories: ['Groceries', 'Dairy', 'Bakery', 'Meat', 'Produce', 'Household'],
   items: [],
   orderDetails: {
     fullName: '',
