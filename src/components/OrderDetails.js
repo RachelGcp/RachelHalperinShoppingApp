@@ -112,6 +112,7 @@ function OrderDetails() {
             </label>
             <input
               type="email"
+              
               id="email"
               name="email"
               className="w-full p-2 border rounded"
