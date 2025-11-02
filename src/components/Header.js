@@ -3,13 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../features/cart/cartSlice';
 
-function Header() {
+function Header(color) {
   const items = useSelector(selectItems);
   const location = useLocation();
   const name="dvoraHalevi";
   const tamarrotan= "hello tamar!"
 const tamar2="good luck!!!!!"
-
+ name=color;
   return (
     <header className="py-4 bg-blue-600 text-white">
       <div className="container mx-auto flex justify-between items-center px-4">
