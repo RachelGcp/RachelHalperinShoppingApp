@@ -154,7 +154,7 @@ function OrderDetails() {
             <button
               type="submit"
               className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
-              disabled={isSubmitting || items.length === 0}
+              disabled={isSubmitting || items.length >5 }
             >
               {isSubmitting ? 'Processing...' : 'Send Order'}
             </button>
